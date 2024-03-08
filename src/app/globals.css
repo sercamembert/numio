@@ -1,33 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  .padding {
+    @apply px-[20px] sm:px-[70px] md:px-[83px] lg:px-[110px] xl:px-[137px] 2xl:px-[155px] 3xl:px-[170px] desktop:px-[185px] ultra:px-[275px];
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  .heading {
+    @apply font-semibold text-[14px] md:text-[26px] lg:text-[35px] xl:text-[44px] 2xl:text-[49px] desktop:text-[59px] ultra:text-[88px];
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .paragraph {
+    @apply text-[12px] md:text-[10px] lg:text-[14px] xl:text-[17px] 2xl:text-[20px] desktop:text-[23px] ultra:text-[35px];
+  }
+
+  .navbar-paragraph {
+    @apply cursor-pointer font-medium text-[12px] lg:text-[13px] xl:text-[15px] 2xl:text-[16px] desktop:text-[19px] ultra:text-[26px] hover:brightness-75 duration-300;
+  }
+
+  .navbar-button-animation {
+    @apply hover:brightness-[75%] hover:scale-110 duration-300;
   }
 }

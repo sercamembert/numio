@@ -1,6 +1,4 @@
-import type { Config } from "tailwindcss";
-
-const config: Config = {
+module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,13 +6,24 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      screens: {
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1440px",
+        "3xl": "1536px",
+        desktop: "1720px",
+        ultra: "2560px",
+      },
+      colors: {
+        primary: "#191919",
+        light: "#999999",
+      },
+      fontFamily: {
+        primary: ["Inter Tight", "sans-serif"],
       },
     },
+    plugins: ["prettier-plugin-tailwindcss"],
   },
-  plugins: [],
 };
-export default config;
