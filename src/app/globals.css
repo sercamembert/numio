@@ -17,7 +17,7 @@ html {
   }
 
   .paragraph {
-    @apply text-[12px] md:text-[10px] lg:text-[14px] xl:text-[17px] 2xl:text-[20px] desktop:text-[23px] ultra:text-[35px];
+    @apply text-[12px] md:text-[13px] lg:text-[14px] xl:text-[17px] 2xl:text-[20px] desktop:text-[23px] ultra:text-[35px];
   }
 
   .navbar-paragraph {
