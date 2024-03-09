@@ -31,6 +31,10 @@ html {
   .navbar-button-animation {
     @apply hover:brightness-[75%] hover:scale-110 duration-300;
   }
+
+  .contact-paragraph {
+    @apply font-medium text-[12px] md:text-[9px] lg:text-[11px] xl:text-[12px] 2xl:text-[14px] desktop:text-[18px] ultra:text-[24px];
+  }
 }
 
 .realisations-grid {
