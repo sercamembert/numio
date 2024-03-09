@@ -1,7 +1,7 @@
 import React from "react";
-import Hero from "./components/Hero/Hero";
+import Hero from "@/components/Hero/Hero";
 import Image from "next/image";
-import About from "./components/About";
+import About from "@/components/About";
 const page = () => {
   return (
     <main className="flex flex-col w-full">
