@@ -13,7 +13,7 @@ html {
   }
 
   .heading {
-    @apply font-semibold text-[14px] md:text-[26px] lg:text-[35px] xl:text-[44px] 2xl:text-[49px] desktop:text-[59px] ultra:text-[88px];
+    @apply font-semibold text-[37px] md:text-[31px] lg:text-[42px] xl:text-[53px] 2xl:text-[59px] desktop:text-[71px] ultra:text-[106px];
   }
 
   .paragraph {

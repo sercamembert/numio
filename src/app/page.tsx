@@ -1,6 +1,7 @@
 import React from "react";
 import Hero from "./components/Hero/Hero";
 import Image from "next/image";
+import About from "./components/About";
 const page = () => {
   return (
     <main className="flex flex-col w-full">
@@ -16,6 +17,8 @@ const page = () => {
           className="opacity-20 z-0"
         />
       </div>
+
+      <About />
     </main>
   );
 };
