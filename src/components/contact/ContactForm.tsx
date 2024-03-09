@@ -34,7 +34,7 @@ const ContactForm = () => {
         contact-paragraph text-primary
         min-h-[137px] md:min-h-[100px] lg:min-h-[132px] xl:min-h-[166px] 2xl:min-h-[186px] desktop:min-h-[250px] ultra:min-h-[332px]
         "
-        placeholder="Wpisz tutaj swój adres email"
+        placeholder="Twoja wiadomość"
       />
       <div>
         <button
