@@ -3,7 +3,7 @@ import Result from "./Result";
 
 const Results = () => {
   return (
-    <section className="padding flex flex-col-reverse md:flex-row md:justify-between mb-[200px]">
+    <section className="padding flex flex-col-reverse md:flex-row md:justify-between mb-[80px] md:mb-[100px] xl:mb-[110px] 2xl:mb-[130px] desktop:mb-[140px] ultra:mb-[300px]">
       <div
         className="grid grid-cols-2 grid-rows-2 w-full md:w-[47%] mt-9 md:mt-0
         justify-between
