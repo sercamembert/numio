@@ -7,7 +7,10 @@ const Events = async () => {
   const events = await getEvents();
 
   return (
-    <div className="section-space flex flex-col relative mb-[200px]">
+    <section
+      className="section-space flex flex-col relative 
+    mb-[80px] md:mb-[100px] lg:mb-[130px] xl:mb-[145px] 2xl:mb-[170px] desktop:mb-[200px] ultra:mb-[360px]"
+    >
       <h2 className="font-semibold heading text-center leading-tight md:leading-none mb-4 md:mb-0">
         Nadchodzące Wydarzenia
       </h2>
@@ -40,7 +43,7 @@ const Events = async () => {
           Kliknij w wybrane wydarzenie aby zobaczyć więcej szczegółów
         </p>
       </EventScroll>
-    </div>
+    </section>
   );
 };
 

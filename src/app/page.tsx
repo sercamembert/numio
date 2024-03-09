@@ -3,6 +3,7 @@ import Hero from "@/components/Hero/Hero";
 import Image from "next/image";
 import About from "@/components/About";
 import Events from "@/components/events/Events";
+import Results from "@/components/Results";
 const page = () => {
   return (
     <main className="flex flex-col w-full">
@@ -21,6 +22,7 @@ const page = () => {
 
       <About />
       <Events />
+      <Results />
     </main>
   );
 };
