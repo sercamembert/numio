@@ -4,8 +4,9 @@ import AboutBlock from "./AboutBlock";
 const About = () => {
   return (
     <section
-      className="padding flex flex-col md:flex-row mb-[200px] md:justify-between
-    mt-[80px] xl:mt-[100px] 2xl:mt-[130px] desktop:mt-[160px]  ultra:mt-[220px]
+      className="padding flex flex-col md:flex-row md:justify-between
+    mt-[80px] xl:mt-[100px] 2xl:mt-[130px] desktop:mt-[160px] ultra:mt-[220px]
+    mb-[80px] md:mb-[100px] lg:mb-[130px] xl:mb-[145px] 2xl:mb-[170px] desktop:mb-[200px] ultra:mb-[360px]
     "
     >
       <article className="w-full md:w-[48%]">

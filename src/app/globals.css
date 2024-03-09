@@ -20,6 +20,10 @@ html {
     @apply text-[12px] md:text-[13px] lg:text-[14px] xl:text-[17px] 2xl:text-[20px] desktop:text-[23px] ultra:text-[35px];
   }
 
+  .section-space {
+    @apply gap-y-[21px] md:gap-y-[10px] lg:gap-y-[15px] xl:gap-y-[18px] ultra:gap-y-[25px];
+  }
+
   .navbar-paragraph {
     @apply cursor-pointer font-medium text-[12px] lg:text-[13px] xl:text-[15px] 2xl:text-[16px] desktop:text-[19px] ultra:text-[26px] hover:brightness-75 duration-300;
   }
