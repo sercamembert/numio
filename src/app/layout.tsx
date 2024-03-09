@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Koncerty i wydarzenia artystyczne | Numio",
@@ -17,6 +18,7 @@ export default function RootLayout({
       <body className="bg-black text-white font-primary">
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

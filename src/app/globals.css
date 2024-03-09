@@ -37,6 +37,21 @@ html {
   }
 }
 
+@layer components {
+  .link-text {
+    @apply font-light paragraph;
+  }
+  .links-col {
+    @apply flex flex-col gap-y-[3px] md:gap-y-[6px] lg:gap-y-[10px] xl:gap-y-[12px] 2xl:gap-y-[13px] 3xl:gap-y-[14px] desktop:gap-y-[20px];
+  }
+  .terms {
+    @apply text-[3.82px] md:text-[7.82px] lg:text-[10.43px] xl:text-[13.04px] 2xl:text-[14.67px] 3xl:text-[15.67px] desktop:text-[17.52px];
+  }
+  .footer-title {
+    @apply font-bold text-[6.6px] md:text-[13.51px] lg:text-[18.02px] xl:text-[22.52px] 2xl:text-[25.34px] 3xl:text-[27.06px] desktop:text-[30px];
+  }
+}
+
 .realisations-grid {
   grid-template-columns: 1fr 2fr 1fr;
 }
