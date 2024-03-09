@@ -6,6 +6,7 @@ import Events from "@/components/events/Events";
 import Results from "@/components/Results";
 import Artists from "@/components/artists/Artists";
 import Realizations from "@/components/realizations/Realizations";
+import Opinions from "@/components/opinions/Opinions";
 const page = () => {
   return (
     <main className="flex flex-col w-full">
@@ -28,6 +29,7 @@ const page = () => {
         <Results />
         <Artists />
         <Realizations />
+        <Opinions />
       </div>
     </main>
   );
