@@ -5,10 +5,11 @@ import About from "@/components/About";
 import Events from "@/components/events/Events";
 import Results from "@/components/Results";
 import Artists from "@/components/artists/Artists";
+import Realizations from "@/components/realizations/Realizations";
 const page = () => {
   return (
     <main className="flex flex-col w-full">
-      <div className="flex flex-col gap-[90px] md:gap-[110px] lg:gap-[132px] xl:gap-[160px] 2xl:gap-[180px] desktop:gap-[215px] ultra:gap-[331px]">
+      <div className="flex flex-col gap-[120px] md:gap-[110px] lg:gap-[132px] xl:gap-[160px] 2xl:gap-[180px] desktop:gap-[215px] ultra:gap-[331px]">
         <Hero />
 
         <div className="w-full h-full max-h-[720px] absolute inset-0 z-0 md:hidden">
@@ -26,6 +27,7 @@ const page = () => {
         <Events />
         <Results />
         <Artists />
+        <Realizations />
       </div>
     </main>
   );

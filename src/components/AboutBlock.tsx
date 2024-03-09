@@ -28,7 +28,7 @@ const AboutBlock = ({ iconHref, text, title }: Props) => {
         <p className="font-medium text-[18px] md:text-[13px] lg:text-[17px] xl:text-[21px] 2xl:text-[24px] desktop:text-[28px] ultra:text-[40px]">
           {title}
         </p>
-        <p className="opacity-60 text-[10px] md:text-[8px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] desktop:text-[16px] ultra:text-[25px]">
+        <p className="opacity-60 text-[10px] md:text-[8px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] desktop:text-[18px] ultra:text-[25px]">
           {text}
         </p>
       </div>

@@ -32,3 +32,7 @@ html {
     @apply hover:brightness-[75%] hover:scale-110 duration-300;
   }
 }
+
+.realisations-grid {
+  grid-template-columns: 1fr 2fr 1fr;
+}

@@ -6,7 +6,7 @@ const About = () => {
     <section className="padding flex flex-col md:flex-row md:justify-between">
       <article className="w-full md:w-[48%]">
         <h2 className="font-bold heading">O NAS</h2>
-        <p className="font-semibold text-[15px] md:text-[14px] lg:text-[16px] xl:text-[18px] 2xl:text-[22px] desktop:text-[25px] ultra:text-[38px] leading-none">
+        <p className="font-semibold text-[15px] md:text-[14px] lg:text-[16px] xl:text-[18px] 2xl:text-[22px] desktop:text-[25px] ultra:text-[38px] leading-none mb-1">
           W Numio, Sztuka jest Naszym Językiem
         </p>
         <p className="font-extralight paragraph mb-2 lg:mb-4 desktop:mb-6 ultra:mb-8">
