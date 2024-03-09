@@ -11,7 +11,7 @@ const Artists = async () => {
   const artist2 = await client.getEntry("UxQguEdb1kgujQ3KOdYV6");
   const artist3 = await client.getEntry("3dtj9tguiUk97yo612aphK");
   return (
-    <div className=" flex flex-col section-space mb-[57px] md:mb-[74px] lg:mb-[104px] xl:mb-[130px] 3xl:mb-[140px] desktop:mb-[160px] ultra:mb-[240px]">
+    <div className="flex flex-col section-space">
       <h4 className="font-semibold heading text-center mb-4 md:mb-6 2xl:mb-10 ultra:mb-14">
         Artyści
       </h4>
@@ -48,7 +48,7 @@ const Artists = async () => {
         className="mx-auto mt-[35px] md:mt-[30px] 2xl:mt-[40px]  ultra:mt-[60px]"
       >
         <button
-          className="flex items-center justify-center bg-primary text-white bg-opacity-75 uppercase font-semibold text-[10px] md:text-[8px] lg:text-[9px] xl:text-[10px] 2xl:text-[12px] desktop:text-[13px] ultra:text-[19px]
+          className="flex items-center justify-center bg-primary text-white uppercase font-semibold text-[10px] md:text-[8px] lg:text-[9px] xl:text-[10px] 2xl:text-[12px] desktop:text-[13px] ultra:text-[19px]
           rounded-[12px] md:rounded-[8px] lg:rounded-[10px] desktop:rounded-[17px] ultra:rounded-[26px]
           h-[40px] md:h-[30px] lg:h-[33px] xl:h-[41px] 2xl:h-[46px] desktop:h-[55px] ultra:h-[82px]
           min-w-[130px] md:min-w-[80px] lg:min-w-[110px] xl:min-w-[135px] 2xl:min-w-[153px] desktop:min-w-[182px] ultra:min-w-[271px]

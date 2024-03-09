@@ -8,23 +8,25 @@ import Artists from "@/components/artists/Artists";
 const page = () => {
   return (
     <main className="flex flex-col w-full">
-      <Hero />
+      <div className="flex flex-col gap-[90px] md:gap-[110px] lg:gap-[132px] xl:gap-[160px] 2xl:gap-[180px] desktop:gap-[215px] ultra:gap-[331px]">
+        <Hero />
 
-      <div className="w-full h-full max-h-[720px] absolute inset-0 z-0 md:hidden">
-        <Image
-          src="/images/hero/main.png"
-          alt="Banner"
-          layout="fill"
-          objectFit="cover"
-          objectPosition="center"
-          className="opacity-20 z-0"
-        />
+        <div className="w-full h-full max-h-[720px] absolute inset-0 z-0 md:hidden">
+          <Image
+            src="/images/hero/main.png"
+            alt="Banner"
+            layout="fill"
+            objectFit="cover"
+            objectPosition="center"
+            className="opacity-20 z-0"
+          />
+        </div>
+
+        <About />
+        <Events />
+        <Results />
+        <Artists />
       </div>
-
-      <About />
-      <Events />
-      <Results />
-      <Artists />
     </main>
   );
 };

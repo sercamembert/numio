@@ -1,20 +1,15 @@
 import React from "react";
 import AboutBlock from "./AboutBlock";
-
+import Link from "next/link";
 const About = () => {
   return (
-    <section
-      className="padding flex flex-col md:flex-row md:justify-between
-    mt-[80px] xl:mt-[100px] 2xl:mt-[130px] desktop:mt-[160px] ultra:mt-[220px]
-    mb-[80px] md:mb-[100px] lg:mb-[130px] xl:mb-[145px] 2xl:mb-[170px] desktop:mb-[200px] ultra:mb-[360px]
-    "
-    >
+    <section className="padding flex flex-col md:flex-row md:justify-between">
       <article className="w-full md:w-[48%]">
         <h2 className="font-bold heading">O NAS</h2>
         <p className="font-semibold text-[15px] md:text-[14px] lg:text-[16px] xl:text-[18px] 2xl:text-[22px] desktop:text-[25px] ultra:text-[38px] leading-none">
           W Numio, Sztuka jest Naszym Językiem
         </p>
-        <p className="font-extralight paragraph">
+        <p className="font-extralight paragraph mb-2 lg:mb-4 desktop:mb-6 ultra:mb-8">
           W sercu każdego wydarzenia, które organizujemy, leży głęboka pasja do
           sztuki i kultury. Jesteśmy Numio - Twoi przewodnicy po świecie
           niezapomnianych doświadczeń artystycznych, od intymnych występów po
@@ -22,6 +17,12 @@ const About = () => {
           wydarzeń; to tworzenie przestrzeni, gdzie każdy może doświadczyć magii
           sztuki, która porusza, inspiruje i łączy.
         </p>
+        <Link
+          href="/onas"
+          className="font-medium text-[15px] md:text-[14px] lg:text-[16px] xl:text-[18px] 2xl:text-[22px] desktop:text-[25px] ultra:text-[38px]"
+        >
+          Dowiedz się więcej -&gt;
+        </Link>
       </article>
       <div className="w-full md:w-[39%] flex flex-col gap-6 md:gap-4 lg:gap-6 xl:gap-7 2xl:gap-8 desktop:gap-10">
         <AboutBlock
