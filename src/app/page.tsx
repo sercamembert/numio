@@ -26,10 +26,10 @@ const page = () => {
         </div>
 
         <About />
-        <Events />
+        <Realizations />
         <Results />
         <Artists />
-        <Realizations />
+        <Events />
         <Opinions />
         <Contact />
       </div>

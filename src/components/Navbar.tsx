@@ -36,26 +36,6 @@ const Navbar = () => {
         initial={{ x: 800 }}
       >
         <Link
-          href="/kontakt"
-          className="font-bold"
-          onClick={() => {
-            setIsOpen(false);
-          }}
-          title="Kontakt"
-        >
-          Kontakt
-        </Link>
-        <Link
-          href="/kalendarium"
-          className="font-bold"
-          onClick={() => {
-            setIsOpen(false);
-          }}
-          title="Kalendarium"
-        >
-          Kalendarium
-        </Link>
-        <Link
           href="/onas"
           className="font-bold"
           onClick={() => {
@@ -64,6 +44,16 @@ const Navbar = () => {
           title="O nas"
         >
           O nas
+        </Link>
+        <Link
+          href="/realizacje"
+          className="font-bold cursor-pointer"
+          onClick={() => {
+            setIsOpen(false);
+          }}
+          title="Realizacje"
+        >
+          Realizacje
         </Link>
         <Link
           href="/artysci"
@@ -76,14 +66,24 @@ const Navbar = () => {
           Artyści
         </Link>
         <Link
-          href="/realizacje"
-          className="font-bold cursor-pointer"
+          href="/kalendarium"
+          className="font-bold"
           onClick={() => {
             setIsOpen(false);
           }}
-          title="Realizacje"
+          title="Kalendarium"
         >
-          Realizacje
+          Kalendarium
+        </Link>
+        <Link
+          href="/kontakt"
+          className="font-bold"
+          onClick={() => {
+            setIsOpen(false);
+          }}
+          title="Kontakt"
+        >
+          Kontakt
         </Link>
         <Link
           href="/bilet"
@@ -104,7 +104,7 @@ const Navbar = () => {
           isScrolled && "bg-black"
         }`}
       >
-        <a href="/" aria-description="Strona główna">
+        <Link href="/" aria-description="Strona główna">
           <Image
             src="/images/logo.png"
             alt="Złote Głosy Musicalu"
@@ -112,32 +112,15 @@ const Navbar = () => {
             height={193}
             className="w-[60px] lg:w-[70px] xl:w-[80px] 2xl:w-[90px] 3xl:w-[106px] ultra:w-[120px]"
           />
-        </a>
+        </Link>
 
         <div className="md:hidden">
           <Hamburger toggled={isOpen} size={17} toggle={setIsOpen} />
         </div>
 
-        <div className="hidden md:flex items-center">
-          <Link href="/kontakt" title="kontakt" className="navbar-paragraph">
-            Kontakt
-          </Link>
-          <Link
-            href="/kalendarium"
-            title="kalendarium"
-            className="navbar-paragraph mx-[38px] lg:mx-[49px] xl:mx-[62px] 2xl:mx-[72px] desktop:mx-[85px] "
-          >
-            Kalendarium
-          </Link>
+        <div className="hidden md:flex items-center gap-[38px] lg:gap-[49px] xl:gap-[62px] 2xl:gap-[72px] desktop:gap-[85px]">
           <Link href="/onas" title="O nas" className="navbar-paragraph">
             O nas
-          </Link>
-          <Link
-            href="/artysci"
-            title="Artyści"
-            className="navbar-paragraph mx-[38px] lg:mx-[49px] xl:mx-[62px] 2xl:mx-[72px] desktop:mx-[85px]"
-          >
-            Artyści
           </Link>
           <Link
             href="/realizacje"
@@ -146,12 +129,20 @@ const Navbar = () => {
           >
             Realizacje
           </Link>
-
+          <Link href="/artysci" title="Artyści" className="navbar-paragraph ">
+            Artyści
+          </Link>
           <Link
-            href="/wydarzenia"
-            className="md:ml-[31px] lg:ml-[40px] xl:ml-[57px] 2xl:ml-[60px]"
-            title="Wydarzenia"
+            href="/kalendarium"
+            title="kalendarium"
+            className="navbar-paragraph  "
           >
+            Kalendarium
+          </Link>
+          <Link href="/kontakt" title="kontakt" className="navbar-paragraph">
+            Kontakt
+          </Link>
+          <Link href="/wydarzenia" className="" title="Wydarzenia">
             <button
               className="bg-white text-black font-semibold text-[9px] lg:text-[10px] xl:text-[12px] 2xl:text-[13px] desktop:text-[15px] ultra:text-[20px]
               rounded-[8px] xl:rounded-[10px] desktop:rounded-[17px] ultra:rounded-[26px]
