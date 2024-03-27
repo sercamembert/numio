@@ -17,7 +17,7 @@ const HeroButtons = () => {
               px-3 xl:px-6 
               navbar-button-animation"
       >
-        <p>Porozmawiajmy!</p>
+        <p>Kup Bilet</p>
       </Link>
       <Link
         href="onas"
